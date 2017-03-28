@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import {
-} from 'react-bootstrap';
+import './InputMoneyForm.css';
 
 export default class InputMoneyForm extends Component {
   constructor(props) {
@@ -78,10 +77,6 @@ export default class InputMoneyForm extends Component {
 
     const newHourlyWageString = newHourlyWageMathItem.toFixed(2).toString();
 
-    this.setState({
-      newHourlyWage: newHourlyWageString
-    });
-
     const date = this.state.date;
 
     this.props.onSubmit({newHourlyWageString, date});
@@ -91,7 +86,8 @@ export default class InputMoneyForm extends Component {
       hoursWorked: '',
       minutesWorked: '',
       hourlyWage: '',
-      date: ''
+      date: '',
+      newHourlyWage: newHourlyWageString
     });
   }
 

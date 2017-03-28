@@ -2,19 +2,22 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
 import InputMoney from './components/InputMoney';
-import HoursMadeList from './components/HoursMadeList'
+import HoursMadeList from './components/HoursMadeList';
+import AverageMadeList from './components/AverageMadeList';
 
+/* eslint-disable max-len */
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      newHourlyWageList: []
+      newHourlyWageList: [],
+      averageMadeList: []
     };
   }
 
   componentDidMount() {
-    axios.get('  http://localhost:3004/newHourlyWageList')
+    axios.get('http://localhost:3004/newHourlyWageList')
     .then(resp => {
       this.setState({
         newHourlyWageList: resp.data
@@ -35,6 +38,34 @@ class App extends Component {
       .catch(err => console.log(err));
   }
 
+  handleSelectListItem(listItem) {
+    const newSelectedListItem = [
+      ...this.state.averageMadeList,
+      listItem
+    ];
+
+    const newHourlyWageListArray = this.state.newHourlyWageList.filter(listItemSelected => listItemSelected !== listItem);
+
+    this.setState({
+      averageMadeList: newSelectedListItem,
+      newHourlyWageList: newHourlyWageListArray
+    });
+  }
+
+  handleUnselectListItem(listItem) {
+    const newSelectedListItem = [
+      ...this.state.newHourlyWageList,
+      listItem
+    ];
+
+    const newAverageMadeArray = this.state.averageMadeList.filter(listItemSelected => listItemSelected !== listItem);
+
+    this.setState({
+      newHourlyWageList: newSelectedListItem,
+      averageMadeList: newAverageMadeArray
+    });
+  }
+
   render() {
     return (
       <div className="App">
@@ -43,6 +74,11 @@ class App extends Component {
         />
         <HoursMadeList
           newHourlyWageList={this.state.newHourlyWageList}
+          onSelectListItem={this.handleSelectListItem.bind(this)}
+        />
+        <AverageMadeList
+          averageMadeList={this.state.averageMadeList}
+          onUnselectListItem={this.handleUnselectListItem.bind(this)}
         />
       </div>
     );

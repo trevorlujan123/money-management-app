@@ -3,17 +3,21 @@ import HoursMadeListItem from './HoursMadeListItem';
 
 const HoursMadeList = props => {
   return (
-    <ul className="contact-list">
-      {props.newHourlyWageList.map( listItem => {
-        return (
-          <HoursMadeListItem
-            key={listItem.id}
-            date={listItem.date}
-            newHourlyWageString={listItem.newHourlyWageString}
-          />
-        );
-      })}
-    </ul>
+    <div>
+      <h2>Log</h2>
+      <ul className="hours-made-list">
+        {props.newHourlyWageList.map( listItem => {
+          return (
+            <HoursMadeListItem
+              key={listItem._id}
+              date={listItem.date}
+              newHourlyWageString={listItem.newHourlyWageString}
+              onSelectClick={() => props.onSelectListItem(listItem)}
+            />
+          );
+        })}
+      </ul>
+    </div>
   );
 };
 

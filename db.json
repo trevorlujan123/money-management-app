@@ -3,7 +3,12 @@
     {
       "newHourlyWageString": "5.40",
       "date": "2017-03-27",
-      "id": 1
+      "_id": 1
+    },
+    {
+      "newHourlyWageString": "10.84",
+      "date": "2017-03-31",
+      "_id": 2
     }
   ]
 }
