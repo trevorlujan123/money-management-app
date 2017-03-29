@@ -17,6 +17,7 @@ const AverageMadeList = props => {
           );
         })}
       </ul>
+      <button onClick={() => props.onFindMonthlyAverageClick()}>Find Average</button>
     </div>
   );
 };
@@ -25,4 +26,5 @@ export default AverageMadeList;
 
 AverageMadeList.propTypes = {
   averageMadeList: PropTypes.array.isRequired,
+  onFindMonthlyAverageClick: PropTypes.func.isRequired
 };

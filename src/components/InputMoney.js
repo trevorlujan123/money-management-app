@@ -75,11 +75,13 @@ export default class InputMoneyForm extends Component {
 
     const newHourlyWageMathItem = (moneyMadeNumber / timeWorkedNumber) + hourlyWageNumber;
 
-    const newHourlyWageString = newHourlyWageMathItem.toFixed(2).toString();
+    const roundedMathItem = Number(newHourlyWageMathItem.toFixed(2));
+
+    const newHourlyWageString = roundedMathItem.toString();
 
     const date = this.state.date;
 
-    this.props.onSubmit({newHourlyWageString, date});
+    this.props.onSubmit({newHourlyWageString, date, roundedMathItem});
 
     this.setState({
       moneyMade: '',

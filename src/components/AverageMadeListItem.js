@@ -45,7 +45,7 @@ const HoursMadeListItem = props => {
       month = 'December';
       break;
     default:
-      month = 'Error';
+      month = null;
   }
 
   return (

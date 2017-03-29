@@ -1,14 +1,28 @@
 {
   "newHourlyWageList": [
     {
-      "newHourlyWageString": "5.40",
-      "date": "2017-03-27",
+      "newHourlyWageString": "6.93",
+      "date": "2017-03-28",
+      "roundedMathItem": 6.93,
       "_id": 1
     },
     {
-      "newHourlyWageString": "10.84",
-      "date": "2017-03-31",
+      "newHourlyWageString": "7.88",
+      "date": "2017-03-29",
+      "roundedMathItem": 7.88,
       "_id": 2
+    },
+    {
+      "newHourlyWageString": "5.96",
+      "date": "2017-03-28",
+      "roundedMathItem": 5.96,
+      "_id": 3
+    },
+    {
+      "newHourlyWageString": "6.13",
+      "date": "2017-03-28",
+      "roundedMathItem": 6.13,
+      "_id": 4
     }
   ]
 }
