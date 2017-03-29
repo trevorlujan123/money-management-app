@@ -1,0 +1,138 @@
+.money-input-form {
+  float: left;
+}
+
+.money-input-form label {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.money-input-form input {
+  font-family: 'Raleway', sans-serif;
+  border-radius: 5px;
+  border: 2px solid #8ad0ca;
+  font-size: 20px;
+  padding: 8px;
+}
+
+/* MONEY MADE */
+
+.money-made{
+  margin: 10px;
+}
+
+.money-made, .money-made input, .money-made label{
+  float: left;
+  clear: both;
+}
+
+.money-made label {
+  margin-bottom: 10px;
+}
+
+.money-made input{
+  width: 100px;
+  margin-left: 55px;
+}
+
+/* TIME WORKED */
+
+.time-worked{
+  margin: 10px;
+}
+
+.time-worked, .time-worked-title{
+  float: left;
+  clear: both;
+}
+
+.hours-minutes-worked{
+  float: left;
+  clear: both;
+  margin-left: 30px;
+}
+
+.hours-worked, .minutes-worked, .divide {
+  float: left;
+}
+
+.hours-worked, .minutes-worked{
+  width: 27%;
+}
+
+.hours-worked input, .minutes-worked input {
+  float: left;
+  clear: both;
+  width: 82%;
+  height: 70px;
+  font-size: 40px;
+  padding-left: 10px;
+  padding-top: 0px;
+}
+
+.hours-worked label, .minutes-worked label {
+  float: left;
+}
+
+.divide p {
+  margin: 40px -11px 10px;
+  font-size: 35px;
+}
+
+/* HOURLY WAGE */
+.hourly-wage{
+  float: left;
+  clear: both;
+  margin: 10px;
+}
+
+.hourly-wage label{
+  float: left;
+  margin-bottom: 10px;
+}
+
+.hourly-wage input {
+  float: left;
+  clear: both;
+  width: 100px;
+  margin-left: 55px;
+}
+
+/* DATE */
+
+.date{
+  float: left;
+  clear: both;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.date label {
+  float: left;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+.date input {
+  float: left;
+  clear: left;
+  margin-left: 30px;
+  width: 215px;
+}
+
+/* BUTTON */
+
+.button {
+  background-color: #8ad0ca;
+  font-size: 20px;
+  float: left;
+  clear: both;
+  margin: 10px;
+}
+
+.button:hover {
+  background-color: #c2fef9;
+}

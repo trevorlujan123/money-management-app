@@ -1,0 +1,25 @@
+.average-made-list ul {
+  list-style: none;
+  padding: 0;
+  border: 2px solid #8ad0ca;
+  border-radius: 15px;
+}
+
+.average-made-list h2{
+  margin-top: 5px;
+}
+
+.average-made-list .average-button {
+  background-color: #8ad0ca;
+  font-size: 20px;
+  float: left;
+  clear: both;
+  margin: 10px;
+  border: 2px solid #8ad0ca;
+  border-radius: 5px;
+  margin-left: 145px;
+}
+
+.average-made-list .average-button:hover {
+  background-color: #c2fef9;
+}

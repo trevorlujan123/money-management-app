@@ -1,0 +1,25 @@
+.hours-made-list ul {
+  list-style: none;
+  padding: 0;
+  border: 2px solid #8ad0ca;
+  border-radius: 15px;
+}
+
+.hours-made-list h2{
+  margin-top: 5px;
+}
+
+.hours-made-list .add-all {
+  background-color: #8ad0ca;
+  font-size: 20px;
+  float: left;
+  clear: both;
+  margin: 10px;
+  border: 2px solid #8ad0ca;
+  border-radius: 5px;
+  margin-left: 145px;
+}
+
+.hours-made-list .add-all:hover {
+  background-color: #c2fef9;
+}

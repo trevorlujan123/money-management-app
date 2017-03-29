@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import {
+  Grid,
+  Row,
+  Col
+} from 'react-bootstrap';
 
-import NavBar from './components/NavBar';
-import InputMoney from './components/InputMoney';
-import HoursMadeList from './components/HoursMadeList';
-import AverageMadeList from './components/AverageMadeList';
-import FindAverage from './components/FindAverage';
+import './App.css';
+import NavBar from './components/NavBar/index';
+import InputMoneyForm from './components/InputMoneyForm/index';
+import HoursMadeList from './components/HoursMadeList/index';
+import AverageMadeList from './components/AverageMadeList/index';
+import FindAverage from './components/FindAverage/index';
+import Footer from './components/Footer/index';
 
 /* eslint-disable max-len */
 class App extends Component {
@@ -47,11 +54,8 @@ class App extends Component {
       listItem
     ];
 
-    const newHourlyWageListArray = this.state.newHourlyWageList.filter(listItemSelected => listItemSelected !== listItem);
-
     this.setState({
       averageMadeList: newSelectedListItem,
-      newHourlyWageList: newHourlyWageListArray
     });
   }
 
@@ -91,28 +95,52 @@ class App extends Component {
     this.setState({
       averageMonthly: averageString
     });
+  }
 
+  handleAddAll() {
+    this.setState({
+      averageMadeList: this.state.newHourlyWageList
+    });
+  }
+
+  handleRemoveListItem(_id) {
+    axios.delete(`http://localhost:3004/newHourlyWageList/${_id}`)
+  .then(() => {
+    this.setState({
+      newHourlyWageList: this.state.newHourlyWageList.filter(listItem => listItem._id !== _id)
+    });
+  })
+  .catch(err => console.log(err));
   }
 
   render() {
     return (
       <div className="App">
         <NavBar />
-        <InputMoney
-          onSubmit={this.handleNewHourlyWageSubmit.bind(this)}
-        />
-        <HoursMadeList
-          newHourlyWageList={this.state.newHourlyWageList}
-          onSelectListItem={this.handleSelectListItem.bind(this)}
-        />
-        <AverageMadeList
-          averageMadeList={this.state.averageMadeList}
-          onUnselectListItem={this.handleUnselectListItem.bind(this)}
-          onFindMonthlyAverageClick={this.handleFindMonthlyAverage.bind(this)}
-        />
-        <FindAverage
-          averageMonthly={this.state.averageMonthly}
-        />
+        <Grid>
+          <Row className="show-grid">
+            <InputMoneyForm
+              onSubmit={this.handleNewHourlyWageSubmit.bind(this)}
+            />
+            <HoursMadeList
+              newHourlyWageList={this.state.newHourlyWageList}
+              onSelectListItem={this.handleSelectListItem.bind(this)}
+              onRemoveListItem={this.handleRemoveListItem.bind(this)}
+              onAddAllClick={this.handleAddAll.bind(this)}
+            />
+            <Col sm={4}>
+              <AverageMadeList
+                averageMadeList={this.state.averageMadeList}
+                onUnselectListItem={this.handleUnselectListItem.bind(this)}
+                onFindMonthlyAverageClick={this.handleFindMonthlyAverage.bind(this)}
+              />
+              <FindAverage
+                averageMonthly={this.state.averageMonthly}
+              />
+            </Col>
+          </Row>
+        </Grid>
+        <Footer />
       </div>
     );
   }

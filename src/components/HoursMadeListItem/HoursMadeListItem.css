@@ -1,0 +1,25 @@
+li button{
+  float: right;
+  background-color: #8ad0ca;
+  border: 2px solid #8ad0ca;
+  border-radius: 5px;
+}
+
+li button:hover{
+  background-color: #8ad0ca;
+  background-color: #c2fef9;
+}
+
+li{
+  margin: 15px;
+  height: 25px;
+}
+
+.remove{
+  background-color: #d08a8a;
+  border: 2px solid #d08a8a;
+}
+
+.remove:hover{
+  background-color: #cb5353;
+}

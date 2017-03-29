@@ -1,0 +1,13 @@
+.navbar{
+  background-color: #212127;
+  height: 100px;
+  border-radius: 0px;
+  /* color: #8ad0ca;*/
+}
+
+.navbar h1{
+  font-weight: lighter;
+  font-size: 37px;
+  color: #8ad0ca;
+  margin: 25px;
+}

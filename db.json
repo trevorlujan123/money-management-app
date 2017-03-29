@@ -1,28 +1,124 @@
 {
   "newHourlyWageList": [
     {
-      "newHourlyWageString": "6.93",
-      "date": "2017-03-28",
-      "roundedMathItem": 6.93,
+      "newHourlyWageString": "20.04",
+      "date": "2017-01-02",
+      "roundedMathItem": 20.04,
       "_id": 1
     },
     {
-      "newHourlyWageString": "7.88",
-      "date": "2017-03-29",
-      "roundedMathItem": 7.88,
+      "newHourlyWageString": "14.24",
+      "date": "2017-01-03",
+      "roundedMathItem": 14.24,
       "_id": 2
     },
     {
-      "newHourlyWageString": "5.96",
-      "date": "2017-03-28",
-      "roundedMathItem": 5.96,
+      "newHourlyWageString": "9.57",
+      "date": "2017-01-04",
+      "roundedMathItem": 9.57,
       "_id": 3
     },
     {
-      "newHourlyWageString": "6.13",
-      "date": "2017-03-28",
-      "roundedMathItem": 6.13,
+      "newHourlyWageString": "16.35",
+      "date": "2017-01-06",
+      "roundedMathItem": 16.35,
       "_id": 4
+    },
+    {
+      "newHourlyWageString": "22.37",
+      "date": "2017-01-07",
+      "roundedMathItem": 22.37,
+      "_id": 5
+    },
+    {
+      "newHourlyWageString": "8.65",
+      "date": "2017-01-09",
+      "roundedMathItem": 8.65,
+      "_id": 6
+    },
+    {
+      "newHourlyWageString": "10.87",
+      "date": "2017-01-10",
+      "roundedMathItem": 10.87,
+      "_id": 7
+    },
+    {
+      "newHourlyWageString": "12.65",
+      "date": "2017-01-16",
+      "roundedMathItem": 12.65,
+      "_id": 8
+    },
+    {
+      "newHourlyWageString": "18.90",
+      "date": "2017-01-17",
+      "roundedMathItem": 18.90,
+      "_id": 9
+    },
+    {
+      "newHourlyWageString": "20.47",
+      "date": "2017-01-18",
+      "roundedMathItem": 20.47,
+      "_id": 10
+    },
+    {
+      "newHourlyWageString": "16.34",
+      "date": "2017-01-20",
+      "roundedMathItem": 16.34,
+      "_id": 11
+    },
+    {
+      "newHourlyWageString": "10.88",
+      "date": "2017-01-22",
+      "roundedMathItem": 10.88,
+      "_id": 12
+    },
+    {
+      "newHourlyWageString": "16.90",
+      "date": "2017-01-23",
+      "roundedMathItem": 16.90,
+      "_id": 13
+    },
+    {
+      "newHourlyWageString": "21.07",
+      "date": "2017-01-24",
+      "roundedMathItem": 21.07,
+      "_id": 14
+    },
+    {
+      "newHourlyWageString": "9.09",
+      "date": "2017-01-26",
+      "roundedMathItem": 9.09,
+      "_id": 15
+    },
+    {
+      "newHourlyWageString": "14.01",
+      "date": "2017-01-27",
+      "roundedMathItem": 14.01,
+      "_id": 16
+    },
+    {
+      "newHourlyWageString": "10.05",
+      "date": "2017-01-29",
+      "roundedMathItem": 10.05,
+      "_id": 17
+    },
+    {
+      "newHourlyWageString": "8.90",
+      "date": "2017-01-30",
+      "roundedMathItem": 8.90,
+      "_id": 18
+    },
+    {
+      "newHourlyWageString": "16.65",
+      "date": "2017-01-31",
+      "roundedMathItem": 16.65,
+      "_id": 19
+    },
+    {
+      "newHourlyWageString": "8.99",
+      "date": "2017-01-17",
+      "roundedMathItem": 8.99,
+      "_id": 20
     }
   ]
 }

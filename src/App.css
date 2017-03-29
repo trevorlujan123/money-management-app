@@ -1,0 +1,19 @@
+.App{
+  font-family: 'Raleway', sans-serif;
+}
+
+.container{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.App .container{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media (min-width: 1200px) {
+  .App .container{
+    width: 1330px;
+  }
+}
